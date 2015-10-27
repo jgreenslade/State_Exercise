@@ -1,0 +1,44 @@
+package edu.elon.subway;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class SubwayStateMachineTest {
+	
+	private SubwayStateMachine s;
+
+	@Before
+	public void setUp() throws Exception {
+		s = new SubwayStateMachine();
+		System.out.println(s.getState());
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		s = null;
+	}
+
+	@Test
+	public void testCoin() {
+		s.coin();
+		assertEquals("UNLOCKED", s.getState());
+	}
+	
+	@Test
+	public void testCoin2() {
+		System.setOut(new PrintStream(new ByteArrayOutputStream()));
+		s.coin();
+		s.coin();
+		assertEquals("UNLOCKED", s.getState());
+	}
+
+	@Test
+	public void testPass() {
+		s.pass();
+		assertEquals("LOCKED", s.getState());
+	}
+
+}

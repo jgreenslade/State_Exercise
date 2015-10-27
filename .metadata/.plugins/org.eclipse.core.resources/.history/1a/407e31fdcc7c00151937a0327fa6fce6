@@ -1,0 +1,13 @@
+package edu.elon.subway;
+
+public class SubwayStateMachine {
+	
+	enum Turnstyle {LOCKED, UNLOCKED};
+	
+	private Turnstyle t;
+	
+	public SubwayStateMachine() {
+		t = LOCKED;
+	}
+
+}

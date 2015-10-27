@@ -1,0 +1,33 @@
+package edu.elon.subway;
+
+public class SubwayStateMachine {
+	
+	enum Turnstyle {LOCKED, UNLOCKED};
+	
+	private Turnstyle t;
+	
+	public SubwayStateMachine() {
+		t = Turnstyle.LOCKED;
+	}
+	
+	public void insertCoin() {
+		if (t == Turnstyle.LOCKED) {
+			t = Turnstyle.UNLOCKED;
+			thankYou();
+		} else {
+			
+		}
+	}
+	
+	private void thankYou() {
+		System.out.println("You are honest. Thanks!");		
+	}
+
+	public void pass() {
+		if (t == Turnstyle.UNLOCKED) {
+			t = Turnstyle.LOCKED;
+			
+		}
+	}
+
+}

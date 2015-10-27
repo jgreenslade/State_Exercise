@@ -1,0 +1,11 @@
+package edu.elon.subway;
+
+public class SubwayStateMachine {
+	
+	private enum state {LOCKED, UNLOCKED};
+	
+	public SubwayStateMachine() {
+		
+	}
+
+}
