@@ -2,18 +2,15 @@ package edu.elon.subway;
 
 public class SubwayStateMachine {
 	
-	enum Turnstyle {LOCKED, UNLOCKED};
+	State lockedState;
+	State unlockedState;
 	
 	private State state;
 	
-	private Turnstyle t;
-	
 	public SubwayStateMachine() {
-		t = Turnstyle.LOCKED;
-	}
-	
-	public String getState() {
-		return t.toString();
+		unlockedState = new UnlockedState();
+		lockedState = new LockedState();
+		state = lockedState;
 	}
 	
 	public void coin() {
@@ -22,5 +19,13 @@ public class SubwayStateMachine {
 
 	public void pass() {
 		state.passThrough(this);
+	}
+	
+	public State getState() {
+		return state;
+	}
+
+	public void setState(State state) {
+		this.state = state;
 	}
 }

@@ -1,0 +1,18 @@
+package edu.elon.subway;
+
+import edu.elon.subway.SubwayStateMachine.Turnstyle;
+
+public class LockedState implements State{
+
+	@Override
+	public void insertCoin(SubwayStateMachine subwayStateMachine) {
+		System.out.println("Coin added");
+		subwayStateMachine.setT(Turnstyle.valueOf("UNLOCKED"));
+	}
+
+	@Override
+	public void passThrough(SubwayStateMachine subwayStateMachine) {
+		System.out.println("Alarm!!! UuUuUuUuUuUuUuUuU!");	
+	}
+
+}

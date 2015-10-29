@@ -1,0 +1,23 @@
+package edu.elon.subway;
+
+public class SubwayStateMachine {
+	
+	private State lockedState;
+	private State unlockedState;
+	
+	private State state;
+	
+	
+	public SubwayStateMachine() {
+		unlockedState = new LockedState();
+		lockedState = new LockedState();
+	}
+	
+	public void coin() {
+		state.insertCoin(this);
+	}
+
+	public void pass() {
+		state.passThrough(this);
+	}
+}

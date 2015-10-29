@@ -1,0 +1,21 @@
+package edu.elon.subway;
+
+public class LockedState implements State{
+
+	@Override
+	public void insertCoin(SubwayStateMachine subwayStateMachine) {
+		System.out.println("Coin added");
+		subwayStateMachine.setState(subwayStateMachine.unlockedState);
+	}
+
+	@Override
+	public void passThrough(SubwayStateMachine subwayStateMachine) {
+		System.out.println("Alarm!!! UuUuUuUuUuUuUuUuU!");	
+	}
+
+	@Override
+	public String toString() {
+		return "LOCKED";
+	}
+
+}

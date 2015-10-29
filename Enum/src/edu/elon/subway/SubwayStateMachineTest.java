@@ -16,7 +16,6 @@ public class SubwayStateMachineTest {
 	@Before
 	public void setUp() throws Exception {
 		s = new SubwayStateMachine();
-		System.out.println(s.getState());
 	}
 
 	@After
@@ -27,27 +26,27 @@ public class SubwayStateMachineTest {
 	@Test
 	public void testCoin() {
 		s.coin();
-		assertEquals("UNLOCKED", s.getState());
+		assertEquals("UNLOCKED", s.getState().toString());
 	}
 	
 	@Test
 	public void testCoin2() {
 		s.coin();
 		s.coin();
-		assertEquals("UNLOCKED",s.getState());
+		assertEquals("UNLOCKED",s.getState().toString());
 	}
 
 	@Test
 	public void testPass() {
 		s.pass();
-		assertEquals("LOCKED", s.getState());
+		assertEquals("LOCKED", s.getState().toString());
 	}
 	
 	@Test
 	public void testPass2() {
 		s.pass();
 		s.pass();
-		assertEquals("LOCKED", s.getState());
+		assertEquals("LOCKED", s.getState().toString());
 	}
 
 }

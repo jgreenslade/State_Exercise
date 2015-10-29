@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SubwayStateMachineTest" project="Enum" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.elon.subway.SubwayStateMachineTest" time="0.001">
+    <testcase name="testCoin2" classname="edu.elon.subway.SubwayStateMachineTest" time="0.0"/>
+    <testcase name="testPass2" classname="edu.elon.subway.SubwayStateMachineTest" time="0.001"/>
+    <testcase name="testCoin" classname="edu.elon.subway.SubwayStateMachineTest" time="0.0"/>
+    <testcase name="testPass" classname="edu.elon.subway.SubwayStateMachineTest" time="0.0"/>
+  </testsuite>
+</testrun>
