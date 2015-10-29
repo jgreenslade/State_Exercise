@@ -1,0 +1,16 @@
+package edu.elon.composite;
+
+public class TestDrive {
+
+	public static void main(String[] args) {
+		CarMenu car = new CarMenu("Civic");
+		car.addComponent(new CarItem("2015 ERZ EX", 21999.0));
+		
+		// Colors
+		CarMenu colors = new CarMenu("Colors");		
+		colors.addComponent(new CarItem("Exterior", 0.0));
+		colors.addComponent(new CarItem("Interior", 0.0));
+
+	}
+
+}

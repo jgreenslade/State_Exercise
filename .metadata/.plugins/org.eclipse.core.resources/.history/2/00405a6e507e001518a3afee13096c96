@@ -1,0 +1,21 @@
+package edu.elon.composite;
+
+public class CRZEX extends CarComponent{
+	
+	private double price = 21990.0;
+	
+	public CRZEX() {
+		// Empty
+	}
+	
+	@Override
+	public void print() {
+		System.out.println("CRZ-EX" + getPrice());
+	}
+
+	@Override
+	public double getPrice() {
+		return super.getPrice();
+	}
+
+}

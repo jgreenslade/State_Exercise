@@ -1,0 +1,12 @@
+package edu.elon.composite;
+
+public class Model extends CarComponent{
+	
+	@Override
+	public void print() {
+		for (CarComponent c: components) {
+			c.print();
+		}
+	}
+
+}

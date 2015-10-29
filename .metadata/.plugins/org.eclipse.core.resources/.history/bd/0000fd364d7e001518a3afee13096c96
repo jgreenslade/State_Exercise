@@ -1,0 +1,6 @@
+package edu.elon.composite;
+
+public class CivicComponent extends CarComponent{
+	
+	
+}

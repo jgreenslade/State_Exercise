@@ -1,0 +1,22 @@
+package edu.elon.composite;
+
+public class CarItem extends CarComponent{
+	private String name;
+	
+	public CarItem(String name) {
+		this.name = name;
+	}
+	@Override
+	public void print() {
+		super.print();
+	}
+
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		return super.getPrice();
+	}
+	
+	
+
+}

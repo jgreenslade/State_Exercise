@@ -1,0 +1,5 @@
+package edu.elon.composite;
+
+public abstract class CarComponent {
+
+}

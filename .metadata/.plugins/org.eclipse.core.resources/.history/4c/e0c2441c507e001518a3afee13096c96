@@ -1,0 +1,15 @@
+package edu.elon.composite;
+
+public class Model extends CarComponent{
+	
+	@Override
+	public void print() {
+		System.out.println();
+	}
+
+	@Override
+	public double getPrice() {
+		return super.getPrice();
+	}
+
+}

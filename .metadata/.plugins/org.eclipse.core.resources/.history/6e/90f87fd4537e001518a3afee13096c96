@@ -1,0 +1,30 @@
+package edu.elon.composite;
+
+import java.util.ArrayList;
+
+public class ElectronicAccessories extends CarComponent{
+	
+	private ArrayList <CarComponent> components;
+	
+	public ElectronicAccessories() {
+		components = new ArrayList<CarComponent>();
+	}
+	
+	public ElectronicAccessories(CarComponent c) {
+		components = new ArrayList<CarComponent>();
+		components.add(c);
+	}
+	
+	@Override
+	public void print() {
+		System.out.println("Interior");
+		for (CarComponent c: components) {
+			c.print();
+		}
+	}
+	
+	public void addComponent(CarComponent c) {
+		components.add(c);
+	}
+
+}

@@ -1,0 +1,24 @@
+package edu.elon.composite;
+
+public class ExteriorColors extends CarComponent{
+	
+	private String color;
+	
+	public ExteriorColors(String color) {
+		this.color = color;
+	}
+
+	@Override
+	public void print() {
+		System.out.println("Interior: " + getColor());
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+}

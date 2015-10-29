@@ -1,0 +1,11 @@
+package edu.elon.composite;
+
+public class InteriorColors extends CarComponent{
+	
+	private String color;
+	
+	public InteriorColors(String color) {
+		this.color = color;
+	}
+
+}

@@ -1,0 +1,29 @@
+package edu.elon.composite;
+
+import java.util.ArrayList;
+
+public class Car extends CarComponent{
+	
+	private ArrayList <CarComponent> components;
+	private String name;
+	public Car(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		super.print();
+	}
+
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		return super.getPrice();
+	}
+	
+	public void addComponent(CarComponent c) {
+		
+	}
+	
+}
